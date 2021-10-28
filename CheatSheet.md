@@ -238,3 +238,85 @@ Item: Purple Cup - Amount: 5 - Price: 16.25
 * [expression for variable in sequence] Creates a new list based on the given sequence. Each element is the result of the given expression.
 
 * [expression for variable in sequence if condition] Creates a new list based on the given sequence. Each element is the result of the given expression; elements only get added if the condition is true.  
+
+## Dictionary Methods Cheat Sheet
+
+**Definition**
+
+x = {key1:value1, key2:value2} 
+
+**Operations**
+
+* len(dictionary) - Returns the number of items in the dictionary
+
+* for key in dictionary - Iterates over each key in the dictionary
+
+* for key, value in dictionary.items() - Iterates over each key,value pair in the dictionary
+
+* if key in dictionary - Checks whether the key is in the dictionary
+
+* dictionary[key] - Accesses the item with key key of the dictionary
+
+* dictionary[key] = value - Sets the value associated with key
+
+* del dictionary[key] - Removes the item with key key from the dictionary
+
+**Methods**
+
+* dict.get(key, default) - Returns the element corresponding to key, or default if it's not present
+
+* dict.keys() - Returns a sequence containing the keys in the dictionary
+
+* dict.values() - Returns a sequence containing the values in the dictionary
+
+* dict.update(other_dictionary) - Updates the dictionary with the items coming from the other dictionary. Existing entries will be replaced; new entries will be added.
+
+* dict.clear() - Removes all the items of the dictionary
+
+Check out the official documentation for [dictionary operations and methods.](https://docs.python.org/3/library/stdtypes.html#mapping-types-dict)
+
+# Classes and Methods Cheat Sheet
+
+### Defining classes and methods
+
+```python
+class ClassName:
+    def method_name(self, other_parameters):
+        body_of_method
+```
+
+### Classes and Instances
+
+* Classes define the behavior of all instances of a specific class.
+
+* Each variable of a specific class is an instance or object.
+
+* Objects can have attributes, which store information about the object.
+
+* You can make objects do work by calling their methods.
+
+* The first parameter of the methods (self) represents the current instance.
+
+* Methods are just like functions, but they can only be used through a class.
+
+### Special methods
+
+* Special methods start and end with __.
+
+* Special methods have specific names, like `__init__` for the constructor or `__str__` for the conversion to string.
+
+### Documenting classes, methods and functions
+
+You can add documentation to classes, methods, and functions by using docstrings right after the definition. Like this:
+
+```python
+class ClassName:
+    """Documentation for the class."""
+    def method_name(self, other_parameters):
+        """Documentation for the method."""
+        body_of_method
+        
+def function_name(parameters):
+    """Documentation for the function."""
+    body_of_function
+```

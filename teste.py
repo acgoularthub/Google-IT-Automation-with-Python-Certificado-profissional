@@ -1,15 +1,12 @@
-def octal_to_string(octal):
-    result = ""
-    value_letters = [(4,"r"),(2,"w"),(1,"x")]
-    for value, letter in value_letters:
-        if octal >= value:
-            result += letter
-            octal -= value
-        else:
-            result += "-"
-    return result
+class Vehicle:
+    wheels = 4
+    door = 5
+    color = ""
+    airbag = ""
 
-print(octal_to_string(755)) # Should be rwxr-xr-x
-print(octal_to_string(644)) # Should be rw-r--r--
-print(octal_to_string(750)) # Should be rwxr-x---
-print(octal_to_string(600)) # Should be rw-------
+carro = Vehicle()
+carro.color = input("Digite a cor do carro: ")
+carro.airbag = input("Digite o tipo de airbag: ")
+print("_____________________________________________________")
+print(carro.color)
+print(carro.airbag)
